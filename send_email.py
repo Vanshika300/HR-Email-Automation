@@ -5,8 +5,8 @@ import time
 
 # ---------------- CONFIG ---------------- #
 
-YOUR_EMAIL = "vanshikashukla557@gmail.com"          # <-- put your Gmail here
-APP_PASSWORD = "gnli kfks gehu uhor"    # <-- Gmail App Password
+YOUR_EMAIL = os.getenv("EMAIL_ID")
+APP_PASSWORD = os.getenv("EMAIL_PASS")    # <-- Gmail App Password
 
 EXCEL_FILE = "hr_contacts.xlsx"
 RESUME_FILE = "Resume.pdf"
@@ -85,5 +85,6 @@ Email: vanshikashukla065@gmail.com
         except Exception as e:
             print("Stopped due to:", e)
             break
+
 
 print(f"\nDONE ✅ Total emails sent: {sent_count}")
