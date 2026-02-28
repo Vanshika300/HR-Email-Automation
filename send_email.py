@@ -2,6 +2,7 @@ import pandas as pd
 import smtplib
 from email.message import EmailMessage
 import time
+import os
 
 # ---------------- CONFIG ---------------- #
 
@@ -88,3 +89,4 @@ Email: vanshikashukla065@gmail.com
 
 
 print(f"\nDONE ✅ Total emails sent: {sent_count}")
+
